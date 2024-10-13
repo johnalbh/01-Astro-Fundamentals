@@ -1,6 +1,15 @@
 ---
-import MainLayouts from "../components/layouts/MainLayouts.astro";
-import Navbar from "../components/Navbar.astro";
+import CustomTitle from "../layouts/CustomTitle.astro";
+import MainLayouts from "../layouts/MainLayouts.astro";
 ---
 
-<MainLayouts title="About"> <h1>About</h1> </MainLayouts>
+<MainLayouts title="About">
+  <h1>About</h1>
+  <CustomTitle title="This is a custom title" /></MainLayouts
+>
+
+<style is:global>
+  h1 {
+    color: red;
+  }
+</style>
